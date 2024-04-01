@@ -1,0 +1,37 @@
+# Unit1
+Homework
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+import java.util.Scanner;
+/**
+ * Student Name:    A Marman
+ * Student Number:  ST10080181
+ * @author Angelo Marman
+ */
+public class Pay_1 {
+
+    public static void main(String[] args) {
+
+        Scanner keyboard = new Scanner (System.in);
+        Double hours;
+        Double rate;
+        Double pay;
+
+        System.out.print ("How many hours did you work?");
+        hours = keyboard.nextDouble ();
+        System.out.print ("How much do you get paid per hour?");
+        rate = keyboard.nextDouble ();
+    
+        if (hours <=40) {
+            pay = ( rate * hours );
+        } else {
+            pay = ( rate * 1.5 * hours );
+        }
+
+        System.out.print ("You earned $" + pay);
+
+    }
+    
+}
